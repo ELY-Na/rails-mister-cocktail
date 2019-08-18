@@ -4,6 +4,7 @@
   <h3><% @cocktails.each do |cocktail| %>
     <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
     <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <%= link_to 'Delete a cocktail', cocktail_path(cocktail), :method => :delete %>
    <% end %>
   </h3>
   <%= link_to 'Add a new cocktail', new_cocktail_path %>

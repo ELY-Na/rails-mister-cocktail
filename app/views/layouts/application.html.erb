@@ -18,13 +18,10 @@
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
       </nav>
-      <%= cl_image_tag("nixl5ztjgrafcso9mwy0",
-      width: 250, height: 170, crop: :fill) %>
-
+      <%= image_tag "cocktails1.jpg", alt: "alttext" %>
     </div>
     <%= yield %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>
-
